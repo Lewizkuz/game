@@ -6,15 +6,13 @@ const printFace = (mood) => {
 		case "joy":
 			return "😄";
 		case "laugh":
+		case "lol":
 			return "🤣";
 		case "sad":
 		case "mournful":
 			return "😥";
-
 		default:
-		case "neutral":
 			return "😐";
-			break;
 	}
 };
 const Unit = forwardRef(({ name, image, mood = "neutral", ...other }, ref) => {
